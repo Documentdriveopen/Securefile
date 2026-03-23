@@ -1,0 +1,137 @@
+:root {
+    --google-blue: #0b57d0;
+    --google-blue-hover: #0842a0;
+    --text-primary: #1f1f1f;
+    --text-secondary: #444746;
+    --border-color: #c4c7c5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8fafd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-primary);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 448px;
+    padding: 16px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 36px 40px;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+    text-align: left; /* Google rarely centers main text */
+}
+
+.drive-logo {
+    width: 40px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+.file-card {
+    display: flex;
+    align-items: center;
+    background: #f0f4f9;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 28px;
+}
+
+.doc-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.file-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.file-type {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-primary {
+    background-color: var(--google-blue);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--google-blue-hover);
+}
+
+.divider {
+    height: 1px;
+    background-color: #e3e3e3;
+    margin: 28px 0;
+}
+
+.abuse-report {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.abuse-report a {
+    color: var(--google-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.legal-footer a {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.legal-footer a:hover {
+    text-decoration: underline;
+}
